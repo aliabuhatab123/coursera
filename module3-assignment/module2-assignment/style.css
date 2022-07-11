@@ -1,0 +1,106 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	font-size: 18px;
+    font-family: sans-serif;
+}
+.row {
+	width: 100%;
+}
+div.row .col-lg-4,
+.col-md-6,
+.col-sm-12 {
+	position: relative;
+}
+p {
+	background: #cad3c9;
+    border: 1px solid red;
+    height: 70%;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 50px;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+div .title {
+    top: 1px;
+    width: 100px;
+    right: 27px;
+    padding: 5px;
+    position: absolute;
+    text-align: center;
+}
+div.col-lg-4:nth-child(1) .title {
+	background: #697C7A;
+}
+div.col-lg-4:nth-child(2) .title {
+	background: #C14543;
+}
+div.col-lg-4:nth-child(3) .title {
+	background: #E5D198;
+}
+h1 {
+	text-align: center;
+	font-size: 40px;
+	margin: 40px auto 50px auto;
+}	
+
+@media (min-width: 992px) {
+	.col-lg-4,
+	.col-md-6,
+	.col-sm-12 {
+		width: calc(100%/3);
+		float: left;
+	}
+}
+@media (min-width: 768px ) and (max-width: 991px) {
+	.col-lg-4,
+	.col-md-6,
+	.col-sm-12 {
+		width: calc(100%/2);
+		float: left;
+	}
+
+	div.col-lg-4:nth-child(3) {
+		width: 100%;
+		position: relative;
+	}
+	.third {
+    border: 1px solid red;
+    height: 20vw;
+    width: 95%;
+    padding: 30px;
+    margin-right: -21px;
+    margin-left: 21px;
+    margin: 20px;
+}
+	div.col-lg-4:nth-child(3) .title {
+ 	top: 21px;
+    width: 100px;
+    right: 30px;
+    padding: 5px;
+    position: absolute;
+    text-align: center;
+}
+}
+@media (max-width: 767px) {
+	.col-lg-4,
+	.col-md-6,
+	.col-sm-12 {
+		width: calc(100%/1);
+		float: left;
+		margin-top: 20px;
+		margin-bottom: 20px;
+	}
+	div .title {
+    top: 1px;
+    width: 100px;
+    right: 39px;
+    padding: 5px;
+    background-color: #cccccc;
+    position: absolute;
+    text-align: center;
+}
+}
