@@ -1,0 +1,143 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	font-size: 18px;
+    font-family: sans-serif;
+}
+
+/*NavBar Style*/
+.nav.navbar {
+	background: #cc55;
+	width: 100%;
+	margin: 0;
+}
+hr {
+	border:1px solid red;
+	margin:0;
+}
+ul li {
+	background: #cc55;
+
+}
+#collapsable-nav {
+	width: 100%;
+	text-align: center;
+}
+@media (max-width: 767px) {
+
+.visible-xs {
+    display: block!important;
+}
+
+}
+.navbar-brand {
+	margin-bottom: 20px;
+	font-size: 30px;
+}
+
+/*Body Styling Start*/
+
+.row {
+	width: 100%;
+}
+ p {
+	background: #cad3c9;
+    border: 1px solid red;
+    height: 70%;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 50px;
+    padding-right: 10px;
+    padding-left: 10px;
+    position: relative;
+}
+p span {
+    top: 0px;
+    left: 0;
+    right: 0%;
+    padding: 5px;
+    position: absolute;
+    text-align: center;
+    align-items: center;
+}
+div.col-md-4:nth-child(1) .title {
+	background: #697C7A;
+}
+div.col-md-4:nth-child(2) .title {
+	background: #C14543;
+}
+div.col-md-4:nth-child(3) .title {
+	background: #E5D198;
+}
+h1 {
+	text-align: center;
+	font-size: 40px;
+	margin: 40px auto 50px auto;
+}	
+/*Body Styling End*/
+
+/*@media (min-width: 991px) {
+	div.row.col-md-4,
+	div.row.col-sm-6,
+	div.row.col-xs-12 {
+		width: calc(100%/1);
+		float: left;
+		margin-top:30px;
+		}
+}
+@media (min-width: 768px){
+
+.col-sm-6 {
+    width: 100%!@important;
+}
+}
+
+@media (min-width: 768px ) and (max-width: 991px) {
+	.col-md-4,
+	.col-sm-6,
+	.col-xs-12 {
+		width: calc(100%/2);
+		float: left;
+	}
+
+	div.col-md-4:nth-child(3) {
+		width: 100%;
+		position: relative;
+	}
+	.third {
+    border: 1px solid red;
+    height: 20vw;
+    width: 95%;
+    padding: 30px;
+    margin-right: -21px;
+    margin-left: 21px;
+    margin: 20px;
+}
+	div.col-md-4:nth-child(3) .title {
+ 	top: 21px;
+    width: 100px;
+    right: 30px;
+    padding: 5px;
+    position: absolute;
+    text-align: center;
+}
+}*/
+@media (min-width: 500px) {
+	.col-md-4.col-sm-6.col-xs-12 {
+		width: calc(100%/1);
+		float: left;
+		margin-top: 20px;
+		margin-bottom: 20px;
+	}
+	div .title {
+    top: 1px;
+    width: 100px;
+    right: 39px;
+    padding: 5px;
+    background-color: #cccccc;
+    position: absolute;
+    text-align: center;
+}
+}
